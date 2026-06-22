@@ -51,7 +51,7 @@ Below is the logical structure of the isolated lab environment:
 ##  Project Metrics & Takeaways
 
 ###  Time Invested
-* **Total Duration:** ~3.5 Hours
+* **Total Duration:** ~6 Hours
 
 ###  The Biggest Obstacle
 * **The Problem:** The initially selected OS option defaulted to **Windows Server Core (CLI Only)** instead of the full graphical version. This completely stripped away the Server Manager dashboard and visual consoles needed to follow the lab steps, forcing configuration changes exclusively via PowerShell cmdlets. Additionally, the isolated internal network cut off external internet capabilities, making it impossible to download setup sheets from the web.
