@@ -1,3 +1,4 @@
+Quick Recall Note: I set up Splunk on a Windows Domain Controller (.10) and a Windows 11 endpoint (.20). They talk on port 9997 on an Internal Network. I simulated brute-force attacks (Event 4625/4740) and admin privileges (Event 4728) and found them in Splunk.
 # Project 3: Centralized Security Log Analysis & SIEM Deployment
 
 ##  Project Overview
