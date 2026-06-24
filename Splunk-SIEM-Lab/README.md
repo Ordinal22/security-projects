@@ -1,5 +1,6 @@
-Quick Recall Note: I set up Splunk on a Windows Domain Controller (.10) and a Windows 11 endpoint (.20). They talk on port 9997 on an Internal Network. I simulated brute-force attacks (Event 4625/4740) and admin privileges (Event 4728) and found them in Splunk.
-# Project 3: Centralized Security Log Analysis & SIEM Deployment
+# (Quick Recall Note: I set up Splunk on a Windows Domain Controller (.10) and a Windows 11 endpoint (.20). They talk on port 9997 on an Internal Network. I simulated brute-force attacks (Event 4625/4740) and admin privileges (Event 4728) and found them in Splunk.)
+
+# Project 2: Centralized Security Log Analysis & SIEM Deployment
 
 ##  Project Overview
 Deployed an isolated enterprise-grade network infrastructure utilizing a Windows Server Domain Controller and a Windows 11 endpoint within Oracle VirtualBox. Configured centralized log ingestion using **Splunk Enterprise** and the **Splunk Universal Forwarder** to monitor, track, and alert on critical authentication events and administrative privilege changes.
