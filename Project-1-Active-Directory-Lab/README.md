@@ -28,7 +28,7 @@ Below is the logical structure of the isolated lab environment:
 
 ### Task 1: Domain Controller Deployment
 * **Action:** Installed the **Active Directory Domain Services** role on Windows Server 2025 and promoted it to a Domain Controller for the new forest root `lab.local`.
-* **Screenshot Verification:** *[Insert Screenshot of "Active Directory Users and Computers" showing the root lab.local domain tree]*
+* **Screenshot Verification:** ![Active Directory Users and Computers](images/project1-01-ad-users-and-computers.png)
 
 ### Task 2: Client Workstation Integration
 * **Action:** Coordinated system settings on the Windows 11 Virtual Machine to link it directly to the `lab.local` domain, verifying credentials against the server database.
@@ -36,11 +36,14 @@ Below is the logical structure of the isolated lab environment:
 
 ### Task 3: Building Corporate Hierarchy
 * **Action:** Created 3 distinct Organizational Units (OUs) named **HR**, **Finance**, and **IT**, and added department-specific security groups and initial seed accounts.
-* **Screenshot Verification:** *[Insert Screenshot of HR OU folder displaying your manual user accounts and security groups]*
+* **Screenshot Verification:** ![HR OU users](images/project1-02-ad-hr-ou.png)
+
+
+![IT OU users](images/project1-04-ad-it-ou.png)
 
 ### Task 4: Hardening & Security Controls
 * **Action:** Applied Group Policy Objects (GPOs) to mandate strict password complexity guidelines and a defensive Account Lockout Policy. Verified the rule via intentional client-side failure.
-* **Screenshot Verification:** *[Insert Screenshot of Group Policy Management Editor showing your Account Lockout Threshold configurations]*
+* **Screenshot Verification:** ![GPO Account Lockout](images/project1-03-gpo-account-lockout.png)
 
 ### Task 5: PowerShell Automation Loop
 * **Action:** Authored and executed a PowerShell pipeline script (`import.ps1`) to parse a local CSV file database and dynamically batch-generate 20 employee profiles into their correct target OUs[...]
