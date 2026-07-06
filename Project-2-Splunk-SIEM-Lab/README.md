@@ -52,5 +52,5 @@ Deployed an isolated enterprise-grade network infrastructure utilizing a Windows
 ##  Dashboard Visualizations
 *(Note: Drag and drop your project screenshots directly into this space on GitHub!)*
 
-*   `[Insert Your Consolidated SOC Dashboard Screenshot Here]`
-*   `[Insert Your Expanded Event 4728 Evidence Field Screenshot Here]`
+*   ![SOC Dashboard](images/project2-01-soc-dashboard.png)
+*   ![Event 4728 evidence field](images/project2-02-event-4728.png)
