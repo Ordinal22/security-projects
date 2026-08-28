@@ -29,7 +29,7 @@ Deploy an isolated enterprise network infrastructure featuring Windows Server 20
 
 **Key Takeaway:** Understand how modern enterprises manage user accounts, enforce security policies at scale, and use scripting to eliminate manual administrative overhead.
 
-⏱️ **Time: ~6 hours** | 📁 [View Project](./Project-1-Active-Directory-Lab/)
+ **Time: ~6 hours** | 📁 [View Project](./Project-1-Active-Directory-Lab/)
 
 ---
 
@@ -46,7 +46,7 @@ Deploy a centralized log ingestion and analysis platform using Splunk to monitor
 
 **Key Takeaway:** SIEM platforms are force multipliers for security teams, allowing analysts to see patterns across thousands of events that would be invisible in raw logs.
 
-⏱️ **Time: 6+ hours** | 📁 [View Project](./Project-2-Splunk-SIEM-Lab/)
+ **Time: 6+ hours** | 📁 [View Project](./Project-2-Splunk-SIEM-Lab/)
 
 ---
 
@@ -76,7 +76,7 @@ Build a lightweight Python automation tool to ingest, parse, and analyze raw Win
 
 **Key Takeaway:** Security automation doesn't require bloated frameworks—well-engineered tools using fundamentals (parsing, state machines, filtering) can deliver high value.
 
-⏱️ **Time: ~8.5 hours** | 📁 [View Project](./Project-3-Log-Automation/)
+ **Time: ~8.5 hours** | 📁 [View Project](./Project-3-Log-Automation/)
 
 ---
 
@@ -93,7 +93,7 @@ Integrate all three previous projects into a complete Security Operations Center
 
 **End-to-End Proof:** Malicious activity generated → Splunk detected → Python triaged
 
-⏱️ **Time: ~2 hours** | 📁 [View Project](./Project4-4-Mini-SOC-Capstone/)
+ **Time: ~2 hours** | 📁 [View Project](./Project4-4-Mini-SOC-Capstone/)
 
 ---
 
