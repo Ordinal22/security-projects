@@ -2,15 +2,15 @@
 
 > A comprehensive collection of enterprise-grade security infrastructure, threat detection, and log automation projects developed in isolated lab environments.
 
+**GitHub Profile:** [@Ordinal22](https://github.com/Ordinal22) | **Total Time Invested:** 20+ hours | **Environment:** Oracle VirtualBox (Isolated Networks)
+
 ---
 
 ## Overview
 
-This portfolio demonstrates hands-on expertise in **systems administration**, **security operations**, **threat detection**, and **automation engineering**. Each project showcases practical skills in designing secure enterprise environments, implementing detection mechanisms, and developing automation tools to streamline security workflows.
+This portfolio demonstrates hands-on expertise in **systems administration**, **security operations**, **threat detection**, and **automation engineering**. Each project showcases practical skills through real-world attack simulations, SIEM deployment, and end-to-end security workflows.
 
-**Total Time Invested:** 20+ hours  
-**Environment:** Oracle VirtualBox (Isolated Networks)  
-**Target Audience:** Security teams, infrastructure engineers, and interviewing professionals
+**Target Audience:** Security teams, infrastructure engineers, and technical interviewers
 
 ---
 
@@ -80,6 +80,23 @@ Build a lightweight Python automation tool to ingest, parse, and analyze raw Win
 
 ---
 
+### [Project 4: Mini-SOC Capstone – Automated Brute-Force Detection Pipeline](./Project4-4-Mini-SOC-Capstone/)
+
+**Skills Demonstrated:** End-to-End Security Operations, Threat Hunting, Incident Response, Infrastructure Integration, Python Automation
+
+Integrate all three previous projects into a complete Security Operations Center (SOC) workflow. This capstone project simulates a multi-stage brute-force attack pipeline:
+
+- **Attack Generation**: Simulated credential attack against a domain user account
+- **Telemetry Ingestion**: Windows Domain Controller generated authentication event logs and forwarded them to Splunk
+- **SIEM Detection**: Validated Splunk's detection of brute-force patterns (Event 4625 spike, followed by Account Lockout Event 4740)
+- **Automated Triage**: Python automation script parsed raw logs, isolated anomalies, and generated executive-ready security report
+
+**End-to-End Proof:** Malicious activity generated → Splunk detected → Python triaged
+
+⏱️ **Time: ~2 hours** | 📁 [View Project](./Project4-4-Mini-SOC-Capstone/)
+
+---
+
 ## Technical Highlights
 
 | Area | Technologies | Competencies |
@@ -95,38 +112,47 @@ Build a lightweight Python automation tool to ingest, parse, and analyze raw Win
 
 By reviewing these projects, you'll see:
 
-1. **Problem-Solving Under Constraints**: Each project involved technical obstacles (network isolation, driver issues, log formatting). The documentation shows how they were diagnosed and resolved.
-2. **Enterprise Thinking**: Real-world concerns like DNS resolution, account lockout policies, centralized logging, and noise reduction are baked into each project.
-3. **Documentation & Communication**: Each project is thoroughly documented with architecture diagrams, step-by-step actions, and key takeaways—skills crucial for team environments.
-4. **Systems Thinking**: Understanding how components (AD, Group Policy, SIEM, Python scripts) integrate into a cohesive security posture.
+1. **Problem-Solving Under Constraints**: Each project involved technical obstacles (network isolation, driver issues, log formatting). The documentation shows how they were diagnosed and resolved
+2. **Enterprise Thinking**: Real-world concerns like DNS resolution, account lockout policies, centralized logging, and noise reduction are baked into each project
+3. **Documentation & Communication**: Each project is thoroughly documented with architecture diagrams, step-by-step actions, and key takeaways—skills crucial for team environments
+4. **Systems Thinking**: Understanding how components (AD, Group Policy, SIEM, Python scripts) integrate into a cohesive security posture
 
 ---
 
 ## Getting Started
 
-1. **Start with Project 1** if you're new to Active Directory or enterprise infrastructure
-2. **Move to Project 2** to see SIEM concepts in action and understand threat detection
-3. **Explore Project 3** to see how automation bridges manual work and sophisticated tooling
+1. **Start with [Project 1](./Project-1-Active-Directory-Lab/)** if you're new to Active Directory or enterprise infrastructure
+2. **Move to [Project 2](./Project-2-Splunk-SIEM-Lab/)** to see SIEM concepts in action and understand threat detection
+3. **Explore [Project 3](./Project-3-Log-Automation/)** to see how automation bridges manual work and sophisticated tooling
+4. **Wrap up with [Project 4](./Project4-4-Mini-SOC-Capstone/)** to see the full integration
 
 Each project folder contains a detailed README with:
 - Project goals and architecture diagrams
 - Step-by-step implementation details
 - Lessons learned and troubleshooting notes
-- Screenshots (placeholders for demonstration)
+- Screenshots and evidence of completion
+
+---
+
+## Interview Talking Points
+
+Be ready to explain:
+
+- **Why** certain design choices were made (e.g., why Splunk over ELK?)
+- **How** you diagnosed and fixed problems (network isolation, log parsing challenges, firewall rules)
+- **What** you'd do differently with more time or resources (scaling to 500 endpoints, live Splunk API integration)
+- **Real-world applications** of each skill (AD groups for access control, SIEM correlation for threat hunting, Python for SOC automation)
 
 ---
 
 ## Contact & Next Steps
 
-This portfolio is designed for **technical interviews, hiring managers, and security professionals**. Each project is a conversation starter—be ready to explain:
+This portfolio is designed for **technical interviews, hiring managers, and security professionals**. Each project is a conversation starter backed by documented evidence.
 
-- **Why** certain design choices were made
-- **How** you diagnosed and fixed problems
-- **What** you'd do differently with more time or resources
-
-*For questions or deeper dives into any project, refer to the individual README files or reach out.*
+For questions or deeper dives into any project, refer to the individual README files.
 
 ---
 
-**Last Updated:** June 2026  
-**Repository:** [Ordinal22/security-projects](https://github.com/Ordinal22/security-projects)
+**Last Updated:** August 2026  
+**Repository:** [Ordinal22/security-projects](https://github.com/Ordinal22/security-projects)  
+**GitHub Profile:** [@Ordinal22](https://github.com/Ordinal22)
