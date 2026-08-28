@@ -29,27 +29,27 @@ Below is the technical data flow of the Mini-SOC pipeline:
 ### Phase 1: Environment Baseline & Identity Provisioning
 To establish a test baseline, a dedicated domain user account named `Target UserTwo` (`tuser2@lab.local`) was provisioned inside the isolated `lab.local/IT` Organizational Unit (OU) on the Windows Server Domain Controller.
 
-![AD User Creation](screenshot1-ad-creation.png.png)
+![AD User Creation](screenshot1-ad-creation.png)
 
 ### Phase 2: Endpoint Deployment
 The target Windows 11 client environment was booted and validated to ensure domain workstation stability and active logging readiness across the internal virtual network.
 
-![Workstation Login](screenshot2-workstation-login.png.png)
+![Workstation Login](screenshot2-workstation-login.png)
 
 ### Phase 3: Attack Execution & Account Lockout
 A credential attack scenario was simulated against the domain user account. The high volume of consecutive incorrect authentication requests successfully tripped the Domain Controller's safety threshold, resulting in an explicit Account Lockout on the client workstation.
 
-![Account Lockout Impact](screenshot3-account-lockout.png.png)
+![Account Lockout Impact](screenshot3-account-lockout.png)
 
 ### Phase 4: SIEM Event Querying
 The generated telemetry was successfully collected by Splunk Enterprise. Querying the SIEM utilizing `index=* EventCode=4625` confirmed the precise indexing of the failed authentication attempts originates from the client machine name (`LAB-WKSTN01.lab.local`).
 
-![Splunk Security Logs](screenshot4-splunk-detection.png.png)
+![Splunk Security Logs](screenshot4-splunk-detection.png)
 
 ### Phase 5: Automated Log Triage
 The telemetry data file (`capstone_logs.txt`) was passed from the isolated lab onto the host machine via a secure Shared Folder directory. The custom Python automation script parsed the raw unstructured log formatting, filtering out system noise while clearly flagging the brute-force footprint and target identity.
 
-![Python Script Output](VM-Logins.png.png)
+![Python Script Output](VM-Logins.png)
 
 ---
 
