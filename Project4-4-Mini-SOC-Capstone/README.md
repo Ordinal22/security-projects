@@ -56,7 +56,7 @@ The telemetry data file (`capstone_logs.txt`) was passed from the isolated lab o
 ##  Lessons Learned & Engineering Improvements
 
 ### 1. File System and String Handling Nuances
-*   **The Issue:** Default Windows system settings initially masked known extensions, resulting in hidden duplicate formats (e.g., `capstone_logs.txt.txt`). Concurrently, raw log entries passed empty fields as structural string literals (`-`), creating artifact user profiles in parsing arrays.
+*   **The Issue:** Default Windows system settings initially masked known extensions, resulting in hidden duplicate formats (e.g., `capstone_logs.txt`). Concurrently, raw log entries passed empty fields as structural string literals (`-`), creating artifact user profiles in parsing arrays.
 *   **The Resolution:** Developed a pipeline sanitization process using PowerShell's object pipeline to clean file names. Optimized the Python script logic to explicitly validate username lengths and screen out automated system system headers.
 
 ### 2. File Transfers vs. Live Integrations
